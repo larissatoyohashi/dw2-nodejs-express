@@ -139,4 +139,22 @@ console.log(
 
 // EXERCICIO 04 - FORMATAÇÃO DE STRINGS
 
-const 
+  const nome = 'Larissa Toyohashi';
+
+    const maiusc = () => {
+      return `Nome com todas as letras maiusculas: ${nome.toUpperCase()}`;
+    }
+
+    const minusc = () => {
+      return `Nome com todas as letras minusculas: ${nome.toLowerCase()}`;
+    }
+
+    const cont = () => {
+      return `Contagem de caracteres: ${nome.length}`;
+    }
+
+  console.log(maiusc());
+  console.log(minusc());
+  console.log(cont());
+ 
+  
