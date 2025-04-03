@@ -1,0 +1,20 @@
+<%- include ('partials/navbar.ejs')%>
+<%- include ('partials/header.ejs')%>
+    <h1> Confira esse produto:</h1>
+    
+
+        <!--  ! => Operador NOT: verifica se o valor é falso  -->
+    <% if (!produto) { %>
+        <%produtos.forEach(produto => { %>
+            <p><a href="/produtos/<%=produtos%>"><%= produto%></a></p>
+        <% }); %>
+        <p> <%=produtos%> </p>
+    <% } else { %>
+        <p><%=produto%></p>
+    <% } %>
+
+
+
+    <hr>
+    <p>Faça seu pedido agora!</p>
+    <%- include ('partials/footer.ejs')%>
